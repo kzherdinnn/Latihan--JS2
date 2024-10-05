@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="main_content">
+      <div class="form_box">
+        <div class="form_title">EVENT REGISTRATION FORM</div>
+        <div class="form_content">
+          <form method="GET" id="form1">
+            <div class="separator"></div>
+            <label class="form_label">Name</label>
+            <input
+              type="text"
+              id="first_name"
+              name="first_name"
+              class="form_textbox_short"
+              placeholder="First Name"
+            />
+            <input
+              type="text"
+              id="last_name"
+              name="last_name"
+              class="form_textbox_short"
+              placeholder="Last Name"
+            />
+            <div class="separator"></div>
+            <label class="form_label">Company</label>
+            <input
+              type="text"
+              id="company"
+              name="company"
+              class="form_textbox"
+              placeholder="Your Company Name"
+            />
+            <div class="separator"></div>
+            <label class="form_label">Email</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              class="form_textbox"
+              placeholder="Your Email Address"
+            />
+            <div class="separator"></div>
+            <label class="form_label">Phone</label>
+            <input
+              type="text"
+              id="area_code"
+              name="area_code"
+              class="form_textbox_short"
+              placeholder="Area Code"
+            />
+            <input
+              type="text"
+              id="phone_number"
+              name="phone_number"
+              class="form_textbox_short"
+              placeholder="Phone Number"
+            />
+            <div class="separator"></div>
+            <label class="form_label">Subject</label>
+            <select id="subject" name="subject" class="form_textbox">
+              <option value="">Choose Option</option>
+              <option value="1">Subject 1</option>
+              <option value="2">Subject 2</option>
+            </select>
+            <div class="separator"></div>
+            <label class="form_label_horizontal">
+              Are you an existing customer?
+            </label>
+            <ul class="form_radio_horizontal">
+              <li>
+                <input type="radio" name="is_existing" value="yes" checked />
+                <span class="item_text">Yes</span>
+              </li>
+              <li>
+                <input type="radio" name="is_existing" value="no" />
+                <span class="item_text">No</span>
+              </li>
+            </ul>
+            <div class="separator"></div>
+            <input
+              type="button"
+              value="REGISTER"
+              onclick="register()"
+              class="form_button_red"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
